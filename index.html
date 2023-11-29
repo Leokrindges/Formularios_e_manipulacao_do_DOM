@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <form id="form">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <div class="div">
+                <label for="name">Nome:</label>
+                <input class="input" type="text" name="name" id="name" value="" required>
+            </div>
+            <div class="div">
+                <label for="address">Endereço:</label>
+                <input class="input" type="text" name="address" id="address" value="" required>
+            </div>
+            <div class="div">
+                <label for="city">Cidade:</label>
+                <input class="input" type="text" name="city" id="city" value="" required>
+            </div>
+            <div class="div">
+                <label for="state">Estado:</label>
+                <select name="state" id="state" required>
+                    <option value="">Selecione</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Parana</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset class="data_professional">
+            <legend>Dados profissionais</legend>
+            <div class="div">
+                <label class="label">Natureza do Cargo</label>
+                <input type="radio" name="charge" id="charge1" value="Gerencia" checked>
+                <label for="charge1">Gerência</label>
+                <input type="radio" name="charge" id="charge2" value="Financeiro">
+                <label for="charge2">Financeiro</label>
+                <input type="radio" name="charge" id="charge3" value="Recepção">
+                <label for="charge3">Recepção</label>
+                <input type="radio" name="charge" id="charge4" value="Administrativo">
+                <label for="charge4">Administrativo</label>
+                <input type="radio" name="charge" id="charge5" value="Juridico">
+                <label for="charge5">Jurídico</label>
+            </div>
+            <div class="div">
+                <label class="label">Área de interesse</label>
+                <input type="checkbox" name="interest" id="interest1" value="Computação">
+                <label for="interest1">Computação</label>
+                <input type="checkbox" name="interest" id="interest2" value="Biologia">
+                <label for="interest2">Biologia</label>
+                <input type="checkbox" name="interest" id="interest3" value="meio_ambiente">
+                <label for="interest3">Meio Ambiente</label>
+                <input type="checkbox" name="interest" id="interest4" value="Engenharia">
+                <label for="interest4">Engenharia</label>
+                <input type="checkbox" name="interest" id="interest5" value="Historia">
+                <label for="interest5">História</label>
+            </div>
+            <div class="div">
+                <label for="curriculum">Mini-currículo</label>
+                <textarea name="curriculum" id="curriculum" cols="30" rows="10"></textarea>
+            </div>
+        </fieldset>
+        <button class="button" type="submit">Enviar</button>
+        <button class="button" type="submit">Limpar</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
